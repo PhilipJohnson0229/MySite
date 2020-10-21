@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+   eCommerce Project
+   Author: Philip Johnson	
+   Date:   08/07/2020
+
+   Filename: Menu.html
+   
+-->
+
+	<title>Jax Bread Co.</title>
+	<meta charset="utf-8" />
+
+	<link href="sub_base.css" rel="stylesheet" />
+	<link href="sub_layout.css" rel="stylesheet" /> 
+	
+	<link href="base.css" rel="stylesheet" />
+	<link href="layout.css" rel="stylesheet" /> 
+
+    <script src="JBC_cart.js" async></script>
+</head>
+
+<body>
+   <header>
+      <div>
+         <label for="mBox">Member Login</label>
+         <input id="mBox" type="text" />
+         <label for="mpwd">Password</label>
+         <input id="mpwd" type="password" />
+      </div>   
+     <img src="jbc_logo.png" alt="jax bread company" />
+      <nav class="horizontal">
+         <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="Reviews.html">Reviews</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+
+
+  <section id="main">
+   
+         <h1>Today's Specials</h1>
+      <p>Go to  <a href="#">Build Your Own</a> to create your own customized meal toppings and combos.</p>
+         
+      <section id="items">
+         <div class="menuItem">
+            <input class="addButton" type="button" value="Add to Order"/>
+            <div id="item0" >
+               <img src="breadItem0.png" alt="pesto melt" />
+               <h1>Pesto Melt</h1>
+               <p>Hickory Smoked Turkey, Mozzarella, Sundried Tomato Pesto, Baby Spinach</p>
+               <p name="price" id="price" value="10.25">Price: $10.25</p>
+            </div>
+         </div>
+         <div class="menuItem">
+            <input class="addButton" type="button" value="Add to Order" />
+            <div id="item1" >
+               <img src="breadItem1.png" alt="veggie_baguette" />
+               <h1>slow roasted bbq pork</h1>            
+               <p>Slow Roasted BBQ Pork, Coleslaw, Mayo on Ciabatta.</p>
+               <p name="price" id="price" value="9.99">Price: $9.99</p>
+            </div>
+         </div>   
+         <div class="menuItem">
+            <input class="addButton" type="button" value="Add to Order" />
+            <div id="item2" >
+               <img src="breadItem2.png" alt="salmon_baguette" />
+               <h1>Chicken Bacon Avocado</h1>            
+               <p>Roasted Chicken, Bacon, Avocado, Arugula, Tomato, Red Onion, Mayo, Ranch </p>
+               <p name="price" id="price" value="9.99">Price: $9.99</p>
+            </div>
+         </div> 
+         <div class="menuItem">
+            <input class="addButton" type="button" value="Add to Order" />
+            <div id="item3" >
+               <img src="breadItem3.png" alt="salami_baguette" />
+               <h1>Jerk Chicken</h1>            
+               <p>Jerk Chicken, Spinach, Tomato, Red Onion, Mayo, Ranch.</p>
+               <p name="price" id="price" value="5.95">Price: $5.95</p>
+            </div>
+         </div>                       
+      </section>
+	  
+	<p><input type="button" value="Submit Order" id="finishOrder" /> </p>
+	  
+                  
+   </section>
+   
+	<aside id="cart">
+		<h1>Shopping Cart</h1>                                 
+	</aside>
+  
+   <footer>
+      Jax Bread Company &#9832; 8380 BAYMEADOWS RD SUITE 5 JACKSONVILLE, FL &nbsp; 32259  904-240-0977
+      <span>
+         <a href="Home.html">About</a>
+         <a href="Terms.html">Terms</a>
+      </span>
+   </footer>
+
+
+</body>
+
+</html>

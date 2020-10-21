@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+  
+   Author: Philip Johnson	
+
+
+   Filename: index.html
+   
+-->
+
+	<title>Home</title>
+	<meta charset="utf-8" />
+
+	<link href="base.css" rel="stylesheet" />
+	<link href="layout.css" rel="stylesheet" /> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="jquery.expandable.css">
+    <link href="main.css" rel="stylesheet"/>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
+        crossorigin="anonymous">
+	</script>
+	<script src="js/aeo-typewriter.js"></script>
+	
+   
+    <script type="text/javascript" src="jquery.expandable.js"></script>
+   
+</head>
+
+<body>
+   <header>   
+		<img src="jbc_logo.png" alt="jax bread company" />
+		<nav role="navigation">
+		  <ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="Resume.html">Resume</a></li>
+			<li><a href="#">Portfolio</a>
+			  <ul class="dropdown">
+				<li><a href="FSCJ_Fall2020_StudentWork_Showcase.html">Web Dev</a></li>
+				<li><a href="#">Game Dev</a></li>
+				<li><a href="#">Animation</a></li>
+			  </ul>
+			</li>
+			<li><a href="Contact.html">Contact</a></li>
+		  </ul>
+		</nav>
+		
+   </header>
+
+
+  <section id="main">
+   
+	<article class="wrap">
+      <h1 class="h1">Allow me to introduce myself</h1>
+	  <div ><p  id = "statement"> </p> </div>
+	  <div ><p  id = "statement1"> </p> </div>
+	  <div ><p  id = "statement2"> </p> </div>  
+	</article>
+	
+		
+	<div class="description to-expand">
+		<h2 class = "h2">My story</h2>
+		<p>I developed my passion for coding and development after I left the military.  I had worked several jobs and had just started college in Jacksonville Fl</p>
+		<!--<img src="https://source.unsplash.com/400x200/?workout" height="200" width="400">-->
+		<p>I began working towards my nursing degree but after spending time teaching myself about how computers can developincredible digital art, I started playing with photoshop and learning how to animate</p>
+		<p>Learning how to animate lead me to learning how to build interactive programs in flash.  I developed a passion for developing interactive games with drag and drop editors like Stencyl</p>
+		<p>I decided to pursue my interests in digital media by leaving Jacksonville Fl to attend the University of Central Florida.</p>
+			<br><br><br><br>
+			<center><figure>
+			<figcaption><p>Graduation day UCF 2014: BFA in Digital Media</p></figcaption>
+			 <img src="UCF1.jpg" alt="UCFGrad"/>
+			</figure></center>
+			<br><br>
+		<p>Coding is my passion and I bring energy and valuable insight to the development team environment</p>
+		<p>In my quest to advance in the field of terchnology and interactive design, I continue to toil away at my game development projects in my spare time</p>
+		<p>I dream of one day releasing a hit indie title developed under my own terms and choice of design/mechanics</p>
+			<br><br><br><br>
+			<center><figure>
+			<figcaption><p>Screenshot of a 3D platormfer project: Title pending</p></figcaption>
+			 <img src="UCF1.jpg" alt="UCFGrad"/>
+			</figure></center>
+			<br><br>
+		<p>I also continue to work on my youtube channels and animations because its an activity I enjoy getting people attention with and voice my opinion on topics related to my channel</p>
+		<p>Mainly my channel showcases my animations and reviews of super hero based content.</p>
+		<p>Currently the content is being created by myself and my brother.</p>
+			<br><br><br><br>
+			<center><figure>
+			<figcaption><p>Hyperverse Media Youtube Channel</p></figcaption>
+			 <img src="UCF1.jpg" alt="UCFGrad"/>
+			</figure></center>
+			<br><br>
+		<p>To keep my mind and body strong I train in Muay Thai kickboxing as a means of improving my overall health and to challenge myself mentally</p>
+		<p>Ive been doing it for many years and I've even worked as a trainer during my time in Orlando Florida.</p>
+		<p>I've participated in several NAGA grappling competitions and I've sparred with hundreds of talented Muay Thai practitioners and I still havent had enough of the sport.</p>
+			<br><br><br><br>
+			<center><figure>
+			<figcaption><p>Training at local Muay Thai gym</p></figcaption>
+			 <img src="UCF1.jpg" alt="UCFGrad" href="https://www.youtube.com/channel/UC8vyoo3uNz8QXFcrwqaEwJw"/>
+			</figure></center>
+			<br><br>
+		</br>
+		</br>
+		</br>
+	</div>
+	
+	
+   </section>
+   
+
+  <footer>
+      <a href="https://www.facebook.com/philip.johnson.167" class="fa fa-facebook"></a>
+	  <a href="mailto: philip.johnson0229@gmail.com" class="fa fa-google"></a>
+	  <a href="#" class="fa fa-linkedin"></a>
+	  <a href="https://www.youtube.com/channel/UC8vyoo3uNz8QXFcrwqaEwJw" class="fa fa-youtube"></a>
+   </footer>
+
+
+<script>
+  
+
+    function foo(){ console.log("Callback"); }
+	
+	jQuery(document).ready(function() {
+			$('.description').expandable({
+				height: 100,
+				offset: 30
+			});
+				
+		
+			$("#statement").typewriter({
+				text: "I am a web developer",
+				waitingTime: 1000,
+				delay: 100,
+				hide: 1,
+				cursor: true,
+			});
+			$("#statement1").typewriter({
+				text: "I also develop interactive games",
+				waitingTime: 6000,
+				delay: 100,
+				cursor: true,
+				hide: 1000
+			});
+			$("#statement2").typewriter({
+				text: "Development is my passion!  Please check out my work!",
+				delay: 80,
+				waitingTime: 12000,
+				hide: 700
+			});
+
+        });
+			
+	
+
+
+</script>
+</body>
+
+</html>
