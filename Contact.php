@@ -21,6 +21,7 @@
 			<li><a href="Resume.html">Resume</a></li>
 			<li><a href="#">Portfolio</a>
 			  <ul class="dropdown">
+				<li><a href="https://github.com/PhilipJohnson0229">Github</a></li>
 				<li><a href="FSCJ_Fall2020_StudentWork_Showcase.html">Web Dev</a></li>
 				<li><a href="#">Game Dev</a></li>
 				<li><a href="#">Animation</a></li>

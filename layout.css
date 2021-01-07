@@ -12,7 +12,6 @@
 html {
    background-color: green;
    font-family: Verdana, Geneva, sans-serif;
-   font-size: 12px;
    min-height: 100vh;
 }
 
@@ -73,6 +72,13 @@ header nav ul li a:hover {
 }
 
 header nav {
+	display: -webkit-flex;
+   display: flex;
+   flex-direction: column;
+   -webkit-flex-flow: column wrap;
+   flex-flow: column wrap;   
+   -webkit-align-content: center;
+   align-content: center;
     font-family: monospace;
 	z-index: 3;
 	background: black;
@@ -92,16 +98,19 @@ header nav ul {
 }
 
 header nav ul li {
+	display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;   
+    -webkit-align-content: center;
+    align-content: center;
     color: #fff;
 	background: inherit;
-    display: block;
-    float: left;
-    padding: 1rem;
+    padding: auto;
     position: relative;
     text-decoration: none;
 	transition-duration: 0.5s;
-   -webkit-flex: 0 1 auto;
-   flex: 0 1 auto;
 }
 
 header nav ul li:hover {
@@ -114,15 +123,15 @@ header nav ul li li a {
 }
 
 header nav ul li ul {
-    background: black;
-    visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
-    position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-    left: 0;
-  display: none;
+   background: black;
+   visibility: hidden;
+   opacity: 0;
+   min-width: inherit;
+   position: absolute;
+   transition: all 0.5s ease;
+   margin-top: 0;
+   left: 0;
+   display: none;
 }
 
 header nav ul li:hover > ul,
@@ -170,7 +179,7 @@ section#main > div > h1 {
    width: 100%;
    font-size: 2em;
    line-height: 2em;
-   letter-spacing: 0.1em;
+   letter-spacing: 0em;
    padding-top: 10px;
    margin: auto;
 }
@@ -313,9 +322,6 @@ footer span a {
 
 .fa {
   padding: 20px;
-  font-size: 50px;
-  width: 8px;
-  height: 8px;
   text-align: center;
   text-decoration: none;
   margin: 5px auto;
@@ -347,3 +353,45 @@ footer span a {
   color: white;
 }
 
+/*Media Styles*/
+
+@media only screen and (max-width: 600px) 
+{
+	html
+	{
+		font-size: 15px;
+	}
+	
+	header nav ul li a 
+	{
+		font-size: 1.6em;
+		padding: 8px;
+	}
+	
+	.fa
+	{
+		font-size: 60px;
+		width: 12px;
+		height: 12px;
+	}
+}
+
+@media only screen and (min-width: 992px) 
+{
+	html
+	{
+		font-size: 12px;
+	}
+	
+	header nav ul li a 
+	{
+		font-size: 1.5em;
+		padding: auto;
+	}
+	.fa
+	{
+		font-size: 50px;
+		width: 8px;
+		height: 8px;
+	}
+}
