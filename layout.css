@@ -4,10 +4,13 @@
    Layout.css
 */
 
+/* 
+   HTML and Body Styles
+*/
 
-/* HTML and Body Styles */
-
-/*makeing a change*/
+/*
+   makeing a change
+*/
 
 html {
    background-color: green;
@@ -18,11 +21,11 @@ html {
 body {
    display: -webkit-flex;
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    -webkit-flex-flow: row wrap;
    flex-flow: row wrap;   
    -webkit-align-content: flex-start;
-   align-content: flex-start;
+   align-content: center;
    background-color: white;
    max-width: 1024px;
    min-width: 420px;
@@ -40,7 +43,6 @@ header {
 header > div {
    background-color: black;
    text-align: right;
-   font-size: 1.4em;
    padding: 10px 5px;
 }
    
@@ -56,13 +58,12 @@ header img {
 header nav ul li a {
    color: white;
    display: block;
-   padding: 10px 20px;
    width: 100%;
    text-decoration: none;
-  transition: transform 0.3s;
+   transition: transform 0.3s;
    transform: scale(1,1);
    transform: translate(0px,0px);
-   font-size: 1.5em;
+   
 }
 
 header nav ul li a:hover {
@@ -72,20 +73,15 @@ header nav ul li a:hover {
 }
 
 header nav {
-	display: -webkit-flex;
-   display: flex;
-   flex-direction: column;
-   -webkit-flex-flow: column wrap;
-   flex-flow: column wrap;   
-   -webkit-align-content: center;
-   align-content: center;
+	
+    align-content: center;
     font-family: monospace;
 	z-index: 3;
 	background: black;
 }
 
 header nav ul {
-  background: inherit;
+    background: inherit;
     list-style: none;
     margin: 0;
     padding-left: 0;
@@ -93,17 +89,12 @@ header nav ul {
    display: flex;
    -webkit-flex-flow: row nowrap;
    flex-flow: row nowrap;
+   flex-direction: row;
    -webkit-justify-content: center;
    justify-content: center;
 }
 
 header nav ul li {
-	display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;   
-    -webkit-align-content: center;
     align-content: center;
     color: #fff;
 	background: inherit;
@@ -156,12 +147,12 @@ section#main {
    flex: 1 1 300px; 
    -webkit-align-self: flex-start;
    align-self: cetner;
-   padding: auto;'
+   padding: auto;
    margin: auto;
 }
 
 section#main > div{
-   padding: auto;'
+   padding: auto;
    margin: auto;
    text-align: center;
 }
@@ -208,21 +199,6 @@ audio{
 
 audio::-webkit-media-controls-panel{
  background-color: orange;
-}
-
-/* Track Styles */
-
-::cue{
-	background-color: transparent black;
-	text-shadow: black 1px 1px 2px;
-	color: rgb(255,177,66);
-	font: 1.2em serif;
-	
-	
-}
-
-::cue(.Title){
-	font: 2em serif;
 }
 
 
@@ -298,7 +274,6 @@ aside > div > span::after {
 footer {
    position: relative;
    margin-top: auto;
-   height: 55px;
    line-height: 40px;
    background-color: rgb(31, 31, 31);
    color: rgb(241, 241, 241);
@@ -315,7 +290,7 @@ footer span {
 
 footer span a {
    color: rgb(241, 241, 241);
-   display: inline-block;0.
+   display: inline-block;
 }
 
 /*Footer links and social media*/
@@ -355,7 +330,9 @@ footer span a {
 
 /*Media Styles*/
 
-@media only screen and (max-width: 600px) 
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) 
 {
 	html
 	{
@@ -364,8 +341,13 @@ footer span a {
 	
 	header nav ul li a 
 	{
-		font-size: 1.6em;
-		padding: 8px;
+		font-size: 1.2em;
+		padding: 10px 10px 8px 8px;
+	}
+	
+	footer
+	{
+		height: 65px;
 	}
 	
 	.fa
@@ -386,12 +368,18 @@ footer span a {
 	header nav ul li a 
 	{
 		font-size: 1.5em;
-		padding: auto;
+		padding: 10px 20px;
 	}
+	
+	footer
+	{
+		height: 55px;
+	}
+	
 	.fa
 	{
 		font-size: 50px;
 		width: 8px;
 		height: 8px;
-	}
+	}	
 }

@@ -3,7 +3,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+	<meta content="True" name="HandheldFriendly">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=0;">
+	<meta name="viewport" content="width=device-width">
     <title>Contact</title>
     <link href="contactForm.css" rel="stylesheet"/>	
 	<link href="layout.css" rel="stylesheet" /> 
